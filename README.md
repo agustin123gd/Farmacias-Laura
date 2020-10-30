@@ -6,3 +6,5 @@ Güenas
 me llamo Sergio antonio y esta es la practica del dia 30/10/2020
 
 Soy Abigail, esta es mi contribución :v
+
+Hola, este es mi comentario
