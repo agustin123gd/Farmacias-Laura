@@ -1,0 +1,1 @@
+document.querySelector("#search_mini_form > div.field.search > div")

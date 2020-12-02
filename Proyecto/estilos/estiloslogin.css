@@ -1,0 +1,63 @@
+body {
+    background-image: url("../img/fondologin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.formulario{
+    background: rgba(0,-0,-0,.5);
+    padding: 20px;
+    border-radius:10px ;
+    box-shadow: 0 0 30px rgb(92, 87, 87);
+    color: white;
+}
+.form-control{
+    background: gray;
+    border-style: none;
+    transition: 0.5s ease-in;
+    outline: none;
+    box-shadow: none;
+}
+.form-control:focus{
+    background: none;
+    box-shadow: none;
+    outline: none;
+}
+.form-control::placeholder{
+    color: white;
+}
+.ingresar{
+    background: #222a3f;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700!important;
+    color: white;
+    box-shadow: 0 0 30px rgb(92, 87, 87);
+    transition: 0.5s aese-in;
+}
+.ingresar:haver{
+color: white;
+}
+.olvide{
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+.olvide1{
+    color: white;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: 700!important;
+   /* border: 2px solid white; */
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, -0, -0, .5);
+}
+.olvide:haver{
+    color:white ;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    cursor: pointer;
+}
