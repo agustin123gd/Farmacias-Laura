@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmacia</title>
+    <title>Farmacias Laura</title>
     <link rel="shortcut icon" href="img/icono-pestaña.png" />
 
 
@@ -31,17 +31,12 @@
     <!--Sección de barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="img/icono-farmacia.png" alt="Farmacias Laura" width="150px" height="150px" >
+            <img src="img/icono-farmacia.png" alt="Farmacias Laura" width="100px" height="100px" >
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <form class="example" action="/action_page.php" style="margin:auto; width:600px; padding-left: 300px; ">
-            <input type="text" placeholder="Buscar.." name="search2">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
+          <span class="navbar-toggler-icon"></span>
+        </button-->
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         
@@ -49,12 +44,35 @@
                <!-- <li class="nav-item active">
                     <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li> -->
+                <form class="example" action="/action_page.php" style="margin:auto; width:600px; padding-left: 300px; ">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Buscar.." name="search2">
+                  <button type="submit" type="button" class="btn btn-outline-primary"><i class="fa fa-search"></i></button>
+                </form>
+
                 <li class="nav-item">
-                   <button> <a class="nav-link" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  href="#">Inicia Sesion</a></button>
+                   <button style="margin: 10px" type="button" class="btn btn-outline-primary"> <a class="nav-link" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  href="#">Inicia Sesion</a></button>
                   
                 </li>
+                 
                 <li>
-                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a class="nav-link" class="btn btn-primary" data-toggle="modal"   href="#">Registrarse </a></button>
+                    <button style="margin: 10px" type="button" class="btn btn-outline-primary"><a class="nav-link" class="btn btn-primary" data-toggle="modal"   href="#">Registrarse </a></button>
+                </li>
+
+                <li>
+                  <button style="margin: 10px" type="button" class="btn btn-outline-primary">
+                    <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-file-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v10.755S4 11 8 11s5 1.755 5 1.755V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                      <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                  </button>
+                </li>
+
+                <li>
+                  <button style="margin: 10px" type="button" class="btn btn-outline-primary">
+                    <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-cart3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                  </button>
                 </li>
 
                 <!--
@@ -66,36 +84,47 @@
                   Launch demo modal 
                 </button></li> -->
             </ul>
-            <img src="img/user.png" width="100px" height="100px">
-            <img src="img/carrito.png" width="100px" height="100px">
+            
+            
            
         </div>
     </nav>
 <hr>
-<div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
+
+<ul class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <li class="nav-item">
+    <a class="nav-link active" href="#home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#news">News</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contact">Contact</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#about">About</a>
+  </li>
+</ul>
+
 
     <!-- Sección del carrusel -->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <section class="container">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="img/imagenes1.jpg" class="d-block sz p-5" alt="..." width="1300px" height="500px">
           </div>
           <div class="carousel-item">
-            <center><img src="img/imagenes2.jpeg" class="d-block sz p-5" alt="..." width="1200px" height="500px"></center>
+            <img src="img/imagenes2.jpeg" class="d-block sz p-5" alt="..." width="1200px" height="500px">
           </div>
           <div class="carousel-item">
-            <center> <img src="img/imagenes3.jpg" class="d-block sz p-5" alt="..." width="1200px" height="495px"></center>
+            <img src="img/imagenes3.jpg" class="d-block sz p-5" alt="..." width="1200px" height="495px">
           </div>
           <div class="carousel-item">
-            <center><img src="img/imagenes4.jpg" class="d-block sz p-5" alt="..." width="1200px" height="500px"></center>
+            <img src="img/imagenes4.jpg" class="d-block sz p-5" alt="..." width="1200px" height="500px">
           </div>
           <div class="carousel-item">
-            <center><img src="img/imagenes5.png" class="d-block sz p-5" alt="..." width="1200px" height="500px"></center>
+            <img src="img/imagenes5.png" class="d-block sz p-5" alt="..." width="1200px" height="500px">
           </div>
 
 
@@ -109,8 +138,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
-
+    </section>
 <!-- Button trigger modal -->
 
 
@@ -191,6 +219,39 @@
     <section class="container">
         <div class="row">
             <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="img/paracetamol.jpg" width="250px" height="200px">
+                    <h6 class="card-subtitle mb-2 text-muted">Paracetamol 500mg</h6>
+                    <p class="card-text">Es un fármaco con propiedades analgésicas y antipiréticas utilizado principalmente para tratar la fiebre, y el dolor leve y moderado.</p>
+                    <label>49.99</label>
+                    <button class="button1">Agregar al Carrito</button>
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="img/paracetamol.jpg" width="250px" height="200px">
+                  <h6 class="card-subtitle mb-2 text-muted">Paracetamol 500mg</h6>
+                  <p class="card-text">Es un fármaco con propiedades analgésicas y antipiréticas utilizado principalmente para tratar la fiebre, y el dolor leve y moderado.</p>
+                  <label>49.99</label>
+                  <button class="button1">Agregar al Carrito</button>
+                </div>
+              </div>
+          </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <img src="img/paracetamol.jpg" width="250px" height="200px">
+                <h6 class="card-subtitle mb-2 text-muted">Paracetamol 500mg</h6>
+                <p class="card-text">Es un fármaco con propiedades analgésicas y antipiréticas utilizado principalmente para tratar la fiebre, y el dolor leve y moderado.</p>
+                <label>49.99</label>
+                <button class="button1">Agregar al Carrito</button>
+              </div>
+            </div>
+        </div>
+            <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
                       <img src="img/paracetamol.jpg" width="250px" height="200px">
@@ -201,6 +262,39 @@
                     </div>
                   </div>
             </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="img/paracetamol.jpg" width="250px" height="200px">
+                    <h6 class="card-subtitle mb-2 text-muted">Paracetamol 500mg</h6>
+                    <p class="card-text">Es un fármaco con propiedades analgésicas y antipiréticas utilizado principalmente para tratar la fiebre, y el dolor leve y moderado.</p>
+                    <label>49.99</label>
+                    <button class="button1">Agregar al Carrito</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <img src="img/paracetamol.jpg" width="250px" height="200px">
+                    <h6 class="card-subtitle mb-2 text-muted">Paracetamol 500mg</h6>
+                    <p class="card-text">Es un fármaco con propiedades analgésicas y antipiréticas utilizado principalmente para tratar la fiebre, y el dolor leve y moderado.</p>
+                    <label>49.99</label>
+                    <button class="button1">Agregar al Carrito</button>
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <img src="img/paracetamol.jpg" width="250px" height="200px">
+                  <h6 class="card-subtitle mb-2 text-muted">Paracetamol 500mg</h6>
+                  <p class="card-text">Es un fármaco con propiedades analgésicas y antipiréticas utilizado principalmente para tratar la fiebre, y el dolor leve y moderado.</p>
+                  <label>49.99</label>
+                  <button class="button1">Agregar al Carrito</button>
+                </div>
+              </div>
+          </div>
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
@@ -226,9 +320,25 @@
         </div>
     </section>
 
-
-
-
+  
+    <hr>
+    <section class="container center">
+      <nav aria-label="...">
+        <ul class="pagination pagination-sm center">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">
+              1
+              <span class="sr-only">(current)</span>
+            </span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+      </nav>
+    </section>  
+    <footer class="bg-dark text-white py-4 fixed-botton">
+      <div class="container text-content"> Copyrighth &copy; mi sitio </div>
+    </footer> 
 
     <script>
         // Get the modal
